@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'main_layout.ui'
 #
-# Created by: PyQt5 UI code generator 5.10.1
+# Created by: PyQt5 UI code generator 5.6
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -69,7 +69,7 @@ class Ui_Form(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
-        self.label.setText(_translate("Form", "TextLabel"))
+        self.label.setText(_translate("Form", "请选择图片"))
         self.label_2.setText(_translate("Form", "评分："))
         self.radioButton_1.setText(_translate("Form", "1"))
         self.radioButton_2.setText(_translate("Form", "2"))
