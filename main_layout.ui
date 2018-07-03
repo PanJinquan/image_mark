@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>605</width>
-    <height>548</height>
+    <height>587</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -171,6 +171,29 @@
     </item>
    </layout>
   </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>440</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>保存...</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>530</y>
+     <width>411</width>
+     <height>51</height>
+    </rect>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections>
@@ -302,11 +325,28 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>open_save()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>394</x>
+     <y>454</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>456</x>
+     <y>448</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>open_picture()</slot>
   <slot>up_picture()</slot>
   <slot>next_picture()</slot>
   <slot>radio_click()</slot>
+  <slot>open_save()</slot>
  </slots>
 </ui>

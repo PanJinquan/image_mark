@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'main_layout.ui'
 #
-# Created by: PyQt5 UI code generator 5.6
+# Created by: PyQt5 UI code generator 5.10.1
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -11,7 +11,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(605, 548)
+        Form.resize(605, 587)
         self.label = QtWidgets.QLabel(Form)
         self.label.setGeometry(QtCore.QRect(120, 20, 401, 401))
         self.label.setObjectName("label")
@@ -54,6 +54,12 @@ class Ui_Form(object):
         self.listWidget = QtWidgets.QListWidget(self.verticalLayoutWidget)
         self.listWidget.setObjectName("listWidget")
         self.verticalLayout.addWidget(self.listWidget)
+        self.pushButton_4 = QtWidgets.QPushButton(Form)
+        self.pushButton_4.setGeometry(QtCore.QRect(320, 440, 75, 23))
+        self.pushButton_4.setObjectName("pushButton_4")
+        self.textBrowser = QtWidgets.QTextBrowser(Form)
+        self.textBrowser.setGeometry(QtCore.QRect(160, 530, 411, 51))
+        self.textBrowser.setObjectName("textBrowser")
 
         self.retranslateUi(Form)
         self.pushButton.clicked.connect(Form.open_picture)
@@ -64,6 +70,7 @@ class Ui_Form(object):
         self.radioButton_3.clicked.connect(Form.radio_click)
         self.radioButton_4.clicked.connect(Form.radio_click)
         self.radioButton_5.clicked.connect(Form.radio_click)
+        self.pushButton_4.clicked.connect(Form.open_save)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
     def retranslateUi(self, Form):
@@ -80,4 +87,5 @@ class Ui_Form(object):
         self.pushButton_2.setText(_translate("Form", "上一张"))
         self.pushButton_3.setText(_translate("Form", "下一张"))
         self.label_3.setText(_translate("Form", "状态："))
+        self.pushButton_4.setText(_translate("Form", "保存..."))
 
